@@ -5,19 +5,19 @@ Yapay zeka destekli kripto para analiz ve trading platformu. Gerçek zamanlı Bi
 ## Ekran Görüntüleri
 
 ### Dashboard
-![Dashboard](public/assets/screenshots/dashboard.png)
+![Dashboard](assets/screenshots/dashboard.png)
 
 ### AI Sinyal Tarayıcı
-![Sinyaller](public/assets/screenshots/signals.png)
+![Sinyaller](assets/screenshots/signals.png)
 
 ### Demo Hesap
-![Demo Hesap](public/assets/screenshots/demo.png)
+![Demo Hesap](assets/screenshots/demo.png)
 
 ### Backtest
-![Backtest](public/assets/screenshots/backtest.png)
+![Backtest](assets/screenshots/backtest.png)
 
 ### Haberler
-![Haberler](public/assets/screenshots/news.png)
+![Haberler](assets/screenshots/news.png)
 
 ## Özellikler
 
