@@ -1,0 +1,36 @@
+.wrapper {
+  margin-bottom: 12px;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  transition: all 0.18s;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.chip:hover {
+  border-color: var(--border2);
+  color: var(--text);
+  background: var(--panel2);
+}
+
+.chip.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(240,185,11,0.08);
+}

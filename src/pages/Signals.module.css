@@ -1,0 +1,215 @@
+.page {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.scanBtn {
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.2s;
+}
+
+.scanBtn:hover:not(:disabled) { background: var(--accent2); }
+.scanBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.scanning {
+  background: var(--panel2);
+  color: var(--muted);
+  border: 1px solid var(--border2);
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.sumCard {
+  background: var(--panel2);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  padding: 14px;
+  text-align: center;
+}
+
+.sumLabel {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.sumValue {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.filterBtn {
+  background: var(--panel2);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all 0.2s;
+}
+
+.filterBtn:hover { color: var(--text); }
+
+.filterActive {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(240,185,11,0.08);
+}
+
+.tableWrap { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+
+.tr:last-child { border-bottom: none; }
+.tr:hover { background: var(--panel2); }
+
+.td {
+  padding: 12px;
+  white-space: nowrap;
+}
+
+.coinCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.coinSym {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.coinName {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.price {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.change {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.up   { background: rgba(14,203,129,0.1);  color: var(--green); }
+.down { background: rgba(246,70,93,0.1);   color: var(--red); }
+
+.sigBadge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.strongBuy  { background: rgba(14,203,129,0.2);  color: var(--green);  border: 1px solid rgba(14,203,129,0.4); }
+.buy        { background: rgba(14,203,129,0.1);  color: var(--green);  border: 1px solid rgba(14,203,129,0.2); }
+.weakBuy    { background: rgba(14,203,129,0.05); color: var(--green);  border: 1px solid rgba(14,203,129,0.1); }
+.strongSell { background: rgba(246,70,93,0.2);   color: var(--red);    border: 1px solid rgba(246,70,93,0.4); }
+.sell       { background: rgba(246,70,93,0.1);   color: var(--red);    border: 1px solid rgba(246,70,93,0.2); }
+.weakSell   { background: rgba(246,70,93,0.05);  color: var(--red);    border: 1px solid rgba(246,70,93,0.1); }
+.hold       { background: rgba(240,185,11,0.1);  color: var(--accent); border: 1px solid rgba(240,185,11,0.2); }
+
+.strengthBar {
+  width: 60px;
+  height: 4px;
+  background: var(--border2);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+
+.strengthFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.strengthNum {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.tradeBtn {
+  background: transparent;
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all 0.2s;
+}
+
+.tradeBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

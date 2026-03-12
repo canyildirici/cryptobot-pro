@@ -1,0 +1,174 @@
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.coinInfo {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.coinName {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.coinPrice {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.change {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.change.up   { background: rgba(14,203,129,0.1);  color: var(--green); }
+.change.down { background: rgba(246,70,93,0.1);   color: var(--red); }
+
+.tfBtns {
+  display: flex;
+  gap: 2px;
+  background: var(--panel2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 3px;
+}
+
+.tfBtn {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  transition: all 0.18s;
+}
+
+.tfBtn:hover { color: var(--text); }
+
+.tfBtn.active {
+  background: var(--border2);
+  color: var(--accent);
+}
+
+.indicatorBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.indBarLabel {
+  font-size: 11px;
+  color: var(--muted);
+  margin-right: 2px;
+}
+
+.indBtn {
+  background: var(--panel2);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  transition: all 0.18s;
+}
+
+.indBtn:hover { color: var(--text); border-color: var(--muted); }
+
+.indActive {
+  border-color: var(--blue) !important;
+  color: var(--blue) !important;
+  background: rgba(24,144,255,0.08) !important;
+}
+
+.divider {
+  width: 1px;
+  height: 14px;
+  background: var(--border2);
+  margin: 0 2px;
+}
+
+.drawBtn {
+  background: var(--panel2);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 11px;
+  color: var(--muted);
+  transition: all 0.18s;
+}
+
+.drawBtn:hover { color: var(--text); }
+
+.drawActive {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  background: rgba(240,185,11,0.08) !important;
+}
+
+.drawHint {
+  font-size: 10px;
+  color: var(--accent);
+  font-style: italic;
+}
+
+.chartWrap {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.chart { width: 100%; }
+
+.loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(30,35,41,0.85);
+  z-index: 10;
+  font-size: 12px;
+  color: var(--muted);
+  border-radius: var(--radius);
+  backdrop-filter: blur(4px);
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--border2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
